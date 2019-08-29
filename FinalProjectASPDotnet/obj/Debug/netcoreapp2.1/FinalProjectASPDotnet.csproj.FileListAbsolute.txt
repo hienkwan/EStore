@@ -34,3 +34,13 @@ D:\Visualstudio\C#\FinalProjectASPDotnet\FinalProjectASPDotnet\obj\Debug\netcore
 D:\Visualstudio\C#\FinalProjectASPDotnet\FinalProjectASPDotnet\obj\Debug\netcoreapp2.1\FinalProjectASPDotnet.csprojAssemblyReference.cache
 D:\Visualstudio\C#\FinalProjectASPDotnet\FinalProjectASPDotnet\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 D:\Visualstudio\C#\FinalProjectASPDotnet\FinalProjectASPDotnet\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+D:\Visualstudio\C#\FinalProjectASPDotnet\FinalProjectASPDotnet\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Categories\Create.cshtml.g.cs
+D:\Visualstudio\C#\FinalProjectASPDotnet\FinalProjectASPDotnet\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Categories\Delete.cshtml.g.cs
+D:\Visualstudio\C#\FinalProjectASPDotnet\FinalProjectASPDotnet\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Categories\Details.cshtml.g.cs
+D:\Visualstudio\C#\FinalProjectASPDotnet\FinalProjectASPDotnet\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Categories\Edit.cshtml.g.cs
+D:\Visualstudio\C#\FinalProjectASPDotnet\FinalProjectASPDotnet\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Categories\Index.cshtml.g.cs
+D:\Visualstudio\C#\FinalProjectASPDotnet\FinalProjectASPDotnet\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Products\Create.cshtml.g.cs
+D:\Visualstudio\C#\FinalProjectASPDotnet\FinalProjectASPDotnet\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Products\Delete.cshtml.g.cs
+D:\Visualstudio\C#\FinalProjectASPDotnet\FinalProjectASPDotnet\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Products\Details.cshtml.g.cs
+D:\Visualstudio\C#\FinalProjectASPDotnet\FinalProjectASPDotnet\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Products\Edit.cshtml.g.cs
+D:\Visualstudio\C#\FinalProjectASPDotnet\FinalProjectASPDotnet\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Products\Index.cshtml.g.cs

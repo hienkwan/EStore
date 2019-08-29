@@ -9,6 +9,10 @@ namespace FinalProjectASPDotnet.Areas.Admin.Models
 {
     public partial class Category
     {
+        public Category()
+        {
+            product = new HashSet<Product>();
+        }
         [Display(Name ="ID loại")]
         [Required]
         [Key]

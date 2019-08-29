@@ -1,0 +1,63 @@
+﻿@model FinalProjectASPDotnet.Areas.Admin.Models.Product
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Create</h2>
+
+<h4>Product</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" asp-controller="Products" enctype="multipart/form-data" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ProductName" class="control-label"></label>
+                <input asp-for="ProductName" class="form-control" />
+                <span asp-validation-for="ProductName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CateId" class="control-label"></label>
+                <select asp-for="CateId" class="form-control" asp-items="ViewBag.CateId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Image" class="control-label"></label>
+                <input  type="file"  name="file" id="file" class="control-label getFileName"/>
+                <input asp-for="Image" class="control-label FileName"/>
+                <span asp-validation-for="Image" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Describe" class="control-label"></label>
+                <input asp-for="Describe" class="form-control" />
+                <span asp-validation-for="Describe" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+@section scripts{ 
+    <script>
+        $(document).ready(function () {
+            $('.getFileName').on("change", function () {
+                alert("hello");
+                var fileName = $(this).val().split("\\").pop();
+                $(this).next('.FileName').val(fileName);
+            });
+        });
+
+    </script>
+
+}
+
