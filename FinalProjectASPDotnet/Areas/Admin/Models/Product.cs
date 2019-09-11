@@ -36,6 +36,7 @@ namespace FinalProjectASPDotnet.Areas.Admin.Models
         public ICollection<BillDetails> BillDetail { get; set; }
         public ICollection<Depot> Depot { get; set; }
         public ICollection<TopSelling> TopSelling { get; set; }
+        public string CategoryNameSeoUrl => category.CategoryName.ToUrlFriendly();
 
     }
 }

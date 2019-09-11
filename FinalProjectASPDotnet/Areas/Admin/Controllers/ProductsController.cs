@@ -50,7 +50,7 @@ namespace FinalProjectASPDotnet.Areas.Admin.Controllers
         // GET: Admin/Products/Create
         public IActionResult Create()
         {
-            ViewData["CateId"] = new SelectList(_context.Category, "CateID", "CateID");
+            ViewData["CateId"] = new SelectList(_context.Category, "CateID", "CategoryName");
             return View();
         }
 
@@ -73,7 +73,7 @@ namespace FinalProjectASPDotnet.Areas.Admin.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CateId"] = new SelectList(_context.Category, "CategoryName", "CategoryName", product.CateId);
+            ViewData["CateID"] = new SelectList(_context.Category, "CategoryName", "CategoryName", product.CateId);
             return View(product);
         }
 

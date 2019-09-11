@@ -44,3 +44,5 @@ D:\Visualstudio\C#\FinalProjectASPDotnet\FinalProjectASPDotnet\obj\Debug\netcore
 D:\Visualstudio\C#\FinalProjectASPDotnet\FinalProjectASPDotnet\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Products\Details.cshtml.g.cs
 D:\Visualstudio\C#\FinalProjectASPDotnet\FinalProjectASPDotnet\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Products\Edit.cshtml.g.cs
 D:\Visualstudio\C#\FinalProjectASPDotnet\FinalProjectASPDotnet\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Products\Index.cshtml.g.cs
+D:\Visualstudio\C#\FinalProjectASPDotnet\FinalProjectASPDotnet\obj\Debug\netcoreapp2.1\Razor\Areas\Client\Views\ShoppingCart\Index.cshtml.g.cs
+D:\Visualstudio\C#\FinalProjectASPDotnet\FinalProjectASPDotnet\obj\Debug\netcoreapp2.1\Razor\Areas\Client\Views\Product\Details.cshtml.g.cs
