@@ -26,16 +26,18 @@ namespace FinalProjectASPDotnet.Controllers
             return View();
         }
 
-        [Route("Product/{category}/{id}")]
-        public async Task<IActionResult> Details(int? id,string category)
+
+
+        [Route("Product/{category}/{ProductName}")]
+        public async Task<IActionResult> Details(string ProductName ,string category)
         {
-            if (id == null)
+            if (ProductName == null)
             {
                 return NotFound();
             }
             var product = await _context.Product
                 .Include(p => p.category)
-                .FirstOrDefaultAsync(p => p.ProductId == id);
+                .FirstOrDefaultAsync(p => p.ProductName.Contains(ProductName));
             if (product == null)
             {
                 return NotFound();
@@ -44,12 +46,13 @@ namespace FinalProjectASPDotnet.Controllers
             return View(product);
         }
 
-        public  async Task<IActionResult> Shop(int? page,int? category)
+        public  async Task<IActionResult> Shop(int? page,int? category,string SearchInput)
         {
             int pageSize = 6;
             if (page == null) page = 1;
             var Context = _context.Product.Include(p => p.category).OrderBy(p => p.ProductId);
             if (category != null) Context = Context.Where(p => p.CateId == category).OrderBy(p => p.ProductId);
+            if (SearchInput != null) Context = Context.Where(p => p.ProductName.Contains(SearchInput)).OrderBy(p => p.ProductId);
             //return View(await _context.Product.ToListAsync());
             return View(await Context.ToListAsync()); 
         }

@@ -54,7 +54,7 @@
                                     <a href="shop-single.html"><img src="~/ItemImage/@item.Image" alt="Image placeholder" class="img-fluid"></a>
                                 </figure>
                                 <div class="block-4-text p-4">
-                                    <h3><a asp-controller="Product" asp-action="Details" asp-route-id="@item.ProductId" asp-route-category="@item.CategoryNameSeoUrl">@item.ProductName</a></h3>
+                                    <h3><a asp-controller="Product" asp-action="Details" asp-route-id="@item.ProductId" asp-route-category="@item.CategoryNameSeoUrl" asp-route-ProductName="@item.ProductName">@item.ProductName</a></h3>
                                     <p class="mb-0">Finding perfect t-shirt</p>
                                     <p class="text-primary font-weight-bold">@item.Price</p>
                                 </div>
